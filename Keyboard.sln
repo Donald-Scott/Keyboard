@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keyboard.KbdBtn", "Keyboard.KbdBtn\Keyboard.KbdBtn.csproj", "{B9362CAF-B6E5-4784-A3B1-102D1A8F136F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyboard.Tests", "Keyboard.Tests\Keyboard.Tests.csproj", "{6550870A-B0DE-48C6-9035-C75DB1DB3943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyboard.KbdLib", "Keyboard.KbdLib\Keyboard.KbdLib.csproj", "{E386F75E-F432-40BD-9FBA-1222115EFE53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyboard.SampleApp", "Keyboard.SampleApp\Keyboard.SampleApp.csproj", "{342D7CB3-67D1-4C55-BAC3-3A66C582B30E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9362CAF-B6E5-4784-A3B1-102D1A8F136F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9362CAF-B6E5-4784-A3B1-102D1A8F136F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9362CAF-B6E5-4784-A3B1-102D1A8F136F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9362CAF-B6E5-4784-A3B1-102D1A8F136F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6550870A-B0DE-48C6-9035-C75DB1DB3943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6550870A-B0DE-48C6-9035-C75DB1DB3943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6550870A-B0DE-48C6-9035-C75DB1DB3943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6550870A-B0DE-48C6-9035-C75DB1DB3943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E386F75E-F432-40BD-9FBA-1222115EFE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E386F75E-F432-40BD-9FBA-1222115EFE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E386F75E-F432-40BD-9FBA-1222115EFE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E386F75E-F432-40BD-9FBA-1222115EFE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{342D7CB3-67D1-4C55-BAC3-3A66C582B30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{342D7CB3-67D1-4C55-BAC3-3A66C582B30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{342D7CB3-67D1-4C55-BAC3-3A66C582B30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{342D7CB3-67D1-4C55-BAC3-3A66C582B30E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C388616B-D161-4A3C-A219-41C3F58E0E0E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,381 @@
+﻿<UserControl x:Class="Keyboard.KbdLib.StandardKeyboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:kbd="clr-namespace:Keyboard.KbdBtn;assembly=Keyboard.KbdBtn"
+             xmlns:local="clr-namespace:Keyboard.KbdLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Images.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="kbd:KeyboardBtn">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <kbd:KeyboardBtn Grid.Column="0" KeyBehaviour="VirtualKey" KeyCode="Oem3" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="`"
+                             local:KeyProperties.ModifiedContent="~"/>
+
+            <kbd:KeyboardBtn Grid.Column="1" KeyBehaviour="VirtualKey" KeyCode="Vk1" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="1"
+                             local:KeyProperties.ModifiedContent="!"/>
+
+            <kbd:KeyboardBtn Grid.Column="2" KeyBehaviour="VirtualKey" KeyCode="Vk2" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="2"
+                             local:KeyProperties.ModifiedContent="@"/>
+
+            <kbd:KeyboardBtn Grid.Column="3" KeyBehaviour="VirtualKey" KeyCode="Vk3" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="3"
+                             local:KeyProperties.ModifiedContent="#"/>
+
+            <kbd:KeyboardBtn Grid.Column="4" KeyBehaviour="VirtualKey" KeyCode="Vk4" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="4"
+                             local:KeyProperties.ModifiedContent="$"/>
+
+            <kbd:KeyboardBtn Grid.Column="5" KeyBehaviour="VirtualKey" KeyCode="Vk5" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="5"
+                             local:KeyProperties.ModifiedContent="%"/>
+
+            <kbd:KeyboardBtn Grid.Column="6" KeyBehaviour="VirtualKey" KeyCode="Vk6" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="6"
+                             local:KeyProperties.ModifiedContent="^"/>
+
+            <kbd:KeyboardBtn Grid.Column="7" KeyBehaviour="VirtualKey" KeyCode="Vk7" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="7"
+                             local:KeyProperties.ModifiedContent="&amp;"/>
+
+            <kbd:KeyboardBtn Grid.Column="8" KeyBehaviour="VirtualKey" KeyCode="Vk8" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="8"
+                             local:KeyProperties.ModifiedContent="*"/>
+
+            <kbd:KeyboardBtn Grid.Column="9" KeyBehaviour="VirtualKey" KeyCode="Vk9" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="9"
+                             local:KeyProperties.ModifiedContent="("/>
+
+            <kbd:KeyboardBtn Grid.Column="10" KeyBehaviour="VirtualKey" KeyCode="Vk0" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="0"
+                             local:KeyProperties.ModifiedContent=")"/>
+
+            <kbd:KeyboardBtn Grid.Column="11" KeyBehaviour="VirtualKey" KeyCode="OemMinus" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="-"
+                             local:KeyProperties.ModifiedContent="_"/>
+
+            <kbd:KeyboardBtn Grid.Column="12" KeyBehaviour="VirtualKey" KeyCode="OemPlus" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="="
+                             local:KeyProperties.ModifiedContent="+"/>
+
+            <kbd:KeyboardBtn Grid.Column="13" KeyBehaviour="VirtualKey" KeyCode="Back" Padding="20">
+                <Image Source="{StaticResource Backspace}"/>
+            </kbd:KeyboardBtn>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+            <kbd:KeyboardBtn Grid.Column="0" KeyBehaviour="VirtualKey" KeyCode="Tab" Content="Tab"/>
+            <kbd:KeyboardBtn Grid.Column="1" KeyBehaviour="VirtualKey" KeyCode="VkQ" Content="q" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="q"
+                             local:KeyProperties.ModifiedContent="Q"/>
+
+            <kbd:KeyboardBtn Grid.Column="2" KeyBehaviour="VirtualKey" KeyCode="VkW" Content="w" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="w"
+                             local:KeyProperties.ModifiedContent="W"/>
+
+            <kbd:KeyboardBtn Grid.Column="3" KeyBehaviour="VirtualKey" KeyCode="VkE" Content="E" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="e"
+                             local:KeyProperties.ModifiedContent="E"/>
+            
+            <kbd:KeyboardBtn Grid.Column="4" KeyBehaviour="VirtualKey" KeyCode="VkR" Content="R" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="r"
+                             local:KeyProperties.ModifiedContent="R"/>
+            
+            <kbd:KeyboardBtn Grid.Column="5" KeyBehaviour="VirtualKey" KeyCode="VkT" Content="T" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="t"
+                             local:KeyProperties.ModifiedContent="T"/>
+            
+            <kbd:KeyboardBtn Grid.Column="6" KeyBehaviour="VirtualKey" KeyCode="VkY" Content="Y" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="y"
+                             local:KeyProperties.ModifiedContent="Y"/>
+            
+            <kbd:KeyboardBtn Grid.Column="7" KeyBehaviour="VirtualKey" KeyCode="VkU" Content="U" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="u"
+                             local:KeyProperties.ModifiedContent="U"/>
+            
+            <kbd:KeyboardBtn Grid.Column="8" KeyBehaviour="VirtualKey" KeyCode="VkI" Content="I" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="i"
+                             local:KeyProperties.ModifiedContent="I"/>
+            
+            <kbd:KeyboardBtn Grid.Column="9" KeyBehaviour="VirtualKey" KeyCode="VkO" Content="O" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="o"
+                             local:KeyProperties.ModifiedContent="O"/>
+            
+            <kbd:KeyboardBtn Grid.Column="10" KeyBehaviour="VirtualKey" KeyCode="VkP" Content="P" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="p"
+                             local:KeyProperties.ModifiedContent="P"/>
+
+            <kbd:KeyboardBtn Grid.Column="11" KeyBehaviour="VirtualKey" KeyCode="Oem4" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="["
+                             local:KeyProperties.ModifiedContent="{}}"/>
+
+            <kbd:KeyboardBtn Grid.Column="12" KeyBehaviour="VirtualKey" KeyCode="Oem6" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="]"
+                             local:KeyProperties.ModifiedContent="{}}}"/>
+
+            <kbd:KeyboardBtn Grid.Column="13" KeyBehaviour="VirtualKey" KeyCode="Oem5" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="\"
+                             local:KeyProperties.ModifiedContent="|"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1.8*"/>
+            </Grid.ColumnDefinitions>
+            <kbd:KeyboardBtn Grid.Column="0" KeyBehaviour="TogglingModifier" KeyCode="Capital" Content="Caps" />
+            <kbd:KeyboardBtn Grid.Column="1" KeyBehaviour="VirtualKey" KeyCode="VkA"  Content="A" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="a"
+                             local:KeyProperties.ModifiedContent="A"/>
+            
+            <kbd:KeyboardBtn Grid.Column="2" KeyBehaviour="VirtualKey" KeyCode="VkS"  Content="S" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="s"
+                             local:KeyProperties.ModifiedContent="S"/>
+            
+            <kbd:KeyboardBtn Grid.Column="3" KeyBehaviour="VirtualKey" KeyCode="VkD"  Content="D" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="d"
+                             local:KeyProperties.ModifiedContent="D"/>
+            
+            <kbd:KeyboardBtn Grid.Column="4" KeyBehaviour="VirtualKey" KeyCode="VkF"  Content="F" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="f"
+                             local:KeyProperties.ModifiedContent="F"/>
+            
+            <kbd:KeyboardBtn Grid.Column="5" KeyBehaviour="VirtualKey" KeyCode="VkG"  Content="G" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="g"
+                             local:KeyProperties.ModifiedContent="G"/>
+            
+            <kbd:KeyboardBtn Grid.Column="6" KeyBehaviour="VirtualKey" KeyCode="VkH"  Content="H" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="h"
+                             local:KeyProperties.ModifiedContent="H"/>
+            
+            <kbd:KeyboardBtn Grid.Column="7" KeyBehaviour="VirtualKey" KeyCode="VkJ"  Content="J" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="j"
+                             local:KeyProperties.ModifiedContent="J"/>
+            
+            <kbd:KeyboardBtn Grid.Column="8" KeyBehaviour="VirtualKey" KeyCode="VkK"  Content="K" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="k"
+                             local:KeyProperties.ModifiedContent="K"/>
+            
+            <kbd:KeyboardBtn Grid.Column="9" KeyBehaviour="VirtualKey" KeyCode="VkL"  Content="L" 
+                             local:KeyProperties.SensitivityType="Caps"
+                             local:KeyProperties.UnmodifiedContent="l"
+                             local:KeyProperties.ModifiedContent="L"/>
+
+            <kbd:KeyboardBtn Grid.Column="10" KeyBehaviour="VirtualKey" KeyCode="Oem1" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent=";"
+                             local:KeyProperties.ModifiedContent=":"/>
+
+            <kbd:KeyboardBtn Grid.Column="11" KeyBehaviour="VirtualKey" KeyCode="Oem7" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="&apos;"
+                             local:KeyProperties.ModifiedContent="&quot;"/>
+
+            <kbd:KeyboardBtn Grid.Column="12" KeyBehaviour="VirtualKey" KeyCode="Return" Padding="25">
+                <Image Source="{StaticResource Return}"/>
+            </kbd:KeyboardBtn>
+        </Grid>
+
+        <Grid Grid.Row="3" x:Name="Row3Grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.4*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2.4*"/>
+            </Grid.ColumnDefinitions>
+            <kbd:KeyboardBtn Grid.Column="0" KeyBehaviour="InstantaneousModifier" KeyCode="Shift"  Content="Shift"/>
+            
+            <kbd:KeyboardBtn Grid.Column="1" KeyBehaviour="VirtualKey" KeyCode="VkZ" Content="Z" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="z"
+                             local:KeyProperties.ModifiedContent="Z"/>
+            
+            <kbd:KeyboardBtn Grid.Column="2" KeyBehaviour="VirtualKey" KeyCode="VkX" Content="X" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="x"
+                             local:KeyProperties.ModifiedContent="X"/>
+            
+            <kbd:KeyboardBtn Grid.Column="3" KeyBehaviour="VirtualKey" KeyCode="VkC" Content="C" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="c"
+                             local:KeyProperties.ModifiedContent="C"/>
+            
+            <kbd:KeyboardBtn Grid.Column="4" KeyBehaviour="VirtualKey" KeyCode="VkV" Content="V" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="v"
+                             local:KeyProperties.ModifiedContent="V"/>
+            
+            <kbd:KeyboardBtn Grid.Column="5" KeyBehaviour="VirtualKey" KeyCode="VkB" Content="B" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="b"
+                             local:KeyProperties.ModifiedContent="B"/>
+            
+            <kbd:KeyboardBtn Grid.Column="6" KeyBehaviour="VirtualKey" KeyCode="VkN" Content="N" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="n"
+                             local:KeyProperties.ModifiedContent="N"/>
+            
+            <kbd:KeyboardBtn Grid.Column="7" KeyBehaviour="VirtualKey" KeyCode="VkM" Content="M" 
+                             local:KeyProperties.SensitivityType="Caps" 
+                             local:KeyProperties.UnmodifiedContent="m"
+                             local:KeyProperties.ModifiedContent="M"/>
+
+            <kbd:KeyboardBtn Grid.Column="8" KeyBehaviour="VirtualKey" KeyCode="OemComa" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent=","
+                             local:KeyProperties.ModifiedContent="&lt;"/>
+
+            <kbd:KeyboardBtn Grid.Column="9" KeyBehaviour="VirtualKey" KeyCode="OemPeriod" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="."
+                             local:KeyProperties.ModifiedContent="&gt;"/>
+
+            <kbd:KeyboardBtn Grid.Column="10" KeyBehaviour="VirtualKey" KeyCode="Oem2" 
+                             local:KeyProperties.SensitivityType="Shift"
+                             local:KeyProperties.UnmodifiedContent="/"
+                             local:KeyProperties.ModifiedContent="?"/>
+            <!--<kbd:KeyboardBtn Grid.Column="10" KeyBehaviour="Chord">
+                <kbd:KeyboardBtn.ChordKeys>
+                    <kbd:VirtualKeyCode>Oem2</kbd:VirtualKeyCode>
+                </kbd:KeyboardBtn.ChordKeys>
+                <kbd:KeyboardBtn.ChordModifiers>
+                    <kbd:VirtualKeyCode>Shift</kbd:VirtualKeyCode>
+                </kbd:KeyboardBtn.ChordModifiers>
+            </kbd:KeyboardBtn>-->
+
+            <kbd:KeyboardBtn Grid.Column="11" KeyBehaviour="VirtualKey" KeyCode="Shift" Content="Shift"/>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="1.7*"/>
+                <ColumnDefinition Width="1.7*"/>
+            </Grid.ColumnDefinitions>
+            <kbd:KeyboardBtn Grid.Column="0"  KeyBehaviour="InstantaneousModifier" KeyCode="Control" Content="Ctrl"/>
+            <kbd:KeyboardBtn Grid.Column="1"  KeyBehaviour="InstantaneousModifier" KeyCode="LWin" Padding="20">
+                <Image Source="{StaticResource WindowsKey}"/>
+            </kbd:KeyboardBtn>
+            <kbd:KeyboardBtn Grid.Column="2"  KeyBehaviour="InstantaneousModifier" KeyCode="Menu" Content="Alt" />
+            <kbd:KeyboardBtn Grid.Column="3"  KeyBehaviour="VirtualKey" KeyCode="SPACE"  Content="Space"/>
+            <kbd:KeyboardBtn Grid.Column="4"  KeyBehaviour="InstantaneousModifier" KeyCode="Menu" Content="Alt"/>
+            <kbd:KeyboardBtn Grid.Column="5"  KeyBehaviour="VirtualKey" KeyCode="Apps" Padding="20">
+                <Image Source="{StaticResource Menu}"/>
+            </kbd:KeyboardBtn>
+            <kbd:KeyboardBtn Grid.Column="6"  KeyBehaviour="InstantaneousModifier" KeyCode="Control" Content="Ctrl"/>
+        </Grid>
+    </Grid>
+</UserControl>

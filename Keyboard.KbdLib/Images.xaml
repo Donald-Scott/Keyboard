@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Keyboard.KbdLib">
+    <DrawingImage x:Key="WindowsKey">
+        <DrawingImage.Drawing>
+            <GeometryDrawing Brush="Black" Geometry="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" />
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="Backspace">
+        <DrawingImage.Drawing>
+            <GeometryDrawing Brush="Black" Geometry="M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12L19,15.59M22,3A2,2 0 0,1 24,5V19A2,2 0 0,1 22,21H7C6.31,21 5.77,20.64 5.41,20.11L0,12L5.41,3.88C5.77,3.35 6.31,3 7,3H22M22,5H7L2.28,12L7,19H22V5Z" />
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="Return">
+        <DrawingImage.Drawing>
+            <GeometryDrawing Brush="Black" Geometry="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" />
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
+    <DrawingImage x:Key="CircleCheck">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1 M 341.333,682.667C 250.16,682.667 164.444,647.161 99.9747,582.692C 35.504,518.223 0,432.507 0,341.333C 0,250.16 35.504,164.444 99.9747,99.9746C 164.444,35.5053 250.16,0 341.333,0C 432.507,0 518.223,35.5053 582.692,99.9746C 647.161,164.444 682.667,250.16 682.667,341.333C 682.667,432.507 647.161,518.223 582.692,582.692C 518.223,647.161 432.507,682.667 341.333,682.667 Z " />
+                    <GeometryDrawing Brush="#FF388A34" Geometry="F1 M 641.707,341.333C 641.707,507.225 507.225,641.707 341.333,641.707C 175.441,641.707 40.96,507.225 40.96,341.333C 40.96,175.441 175.441,40.96 341.333,40.96C 507.225,40.96 641.707,175.441 641.707,341.333 Z " />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1 M 106.74,315.324L 219.535,315.324L 274.13,417.302L 409.071,148.964L 522.896,148.964L 331.815,533.702L 216.96,533.702L 106.74,315.324 Z " />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="Menu">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Geometry="F1 M 64,16L 288,16C 314.595,16 336,37.4066 336,64L 336,384C 336,410.588 314.595,432 288,432L 64,432C 37.4067,432 16,410.588 16,384L 16,64C 16,37.4066 37.4067,16 64,16 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="32" LineJoin="Round" Brush="#FF000000"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="F1 M 96,96L 256,96">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="32" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="#FF000000"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="F1 M 96,176L 256,176">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="32" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="#FF000000"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                    <GeometryDrawing Geometry="F1 M 96,256L 176,256">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="32" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="#FF000000"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Keyboard.SampleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:kbd="clr-namespace:Keyboard.KbdLib;assembly=Keyboard.KbdLib"
+        xmlns:md="https://github.com/fantasticfiasco/mvvm-dialogs"
+        xmlns:local="clr-namespace:Keyboard.SampleApp"
+        mc:Ignorable="d"
+        md:DialogServiceViews.IsRegistered="True"
+        Title="Keyboard Sample" Height="100" Width="280">
+    <Grid FocusManager.FocusedElement="{Binding ElementName=Text}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Keyboards">
+                <MenuItem Header="Basic Keyborad" Command="{Binding BasicKeyboardCommand}"/>
+                <MenuItem Header="Standard Keyboard" Command="{Binding StandardKeyboardCommand}"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
